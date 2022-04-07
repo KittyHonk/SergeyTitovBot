@@ -3,7 +3,7 @@ import sql_work
 from datetime import datetime
 from telebot import types
 #Токен бота
-bot = telebot.TeleBot('5146742291:AAGidSkD4oPhVmlEhOfDgIVI-Ls__gYVtWU')
+bot = telebot.TeleBot('')
 
 @bot.message_handler(commands=["start"])
 def start(message):
@@ -31,7 +31,6 @@ def work_option(message):
         worknow = False
     else:
         worknow = True
-    print(worknow, check)
     #Логика выхода/ухода с работы
     if message.text == "Пришел на работу":
         if worknow is False and check is False:
