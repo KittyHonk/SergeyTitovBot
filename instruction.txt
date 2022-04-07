@@ -7,7 +7,8 @@ alter EVENT new_day on SCHEDULE every 1 DAY;
 
 alter EVENT new_day on SCHEDULE every 2 WEEK; 
 _____________________________________________
-Т.к. столбец AlreadyCheck отвечает за возможность выхода на работу и в случае проблем с ним приводит к отказу прикладываю экстренный сброс:
+
+Т.к. столбец AlreadyCheck отвечает за возможность выхода на работу и в случае проблем с ним приводит к отказу прикладываю скрипт экстренного сброса:
 
 update worker set AlreadyCheck = 0
 where AlreadyCheck = 1;
