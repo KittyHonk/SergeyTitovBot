@@ -181,4 +181,3 @@ def new_day():
 create_table()
 create_table_timeCheck()
 create_scheduler()
-get_statistic()
